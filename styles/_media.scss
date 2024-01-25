@@ -1,0 +1,1739 @@
+@media screen and (max-width : 600px){
+    
+    //HOME PAGE :
+
+    header {
+        padding: 0;
+    }
+
+    header .right-header {
+        padding: 0 !important;
+    }
+
+    //Decrease the size of Light and Dark theme button :
+    .theme-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-content {
+
+        //Previously, home page was having two columns in a "grid", but here now, in phone format, we want only one column :
+        grid-template-columns: 1fr;
+
+        padding-bottom: 6rem;
+    }
+
+    //From left header, remove that triangular design background :
+    .left-header {
+        .h-shape {
+            display: none;
+        }
+    }
+
+    //Place right header at the top of the photo :
+    .right-header {
+        grid-row: 1;
+        //So, now whatever is there in right header, that will be at "1"st row and now my photo is at 2nd row, as header is in "grid" format
+        
+        width: 90%; //If it will be 100%, then there might be overlapping of button with content of right header
+
+        margin: 0 auto; //It will keep content of right header at the center, by "auto" adjusting left and right margins
+
+        .name {
+            // font-size: 2.5rem !important;
+            font-size: 1.5rem !important;  //mine
+        }
+    }
+
+
+    //Adjust image properly at the center :
+    .header-content .left-header .image {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //ABOUT PAGE :
+
+    .about-container {
+        //Previously, about page was having three columns in a "grid", but here now, in phone format, we want only one column :
+        grid-template-columns: 1fr;
+
+        .right-about {
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+
+        .left-about {
+            padding-right: 0;
+            p {
+                padding-left: 0;
+            }
+        }
+    }
+
+
+    //See below at "@media screen and (max-width : 700px)" :
+    .timeline {
+        //Previously, "timeline" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+        grid-template-columns: 1fr;
+
+        padding-bottom: 6rem;
+    }
+
+    
+    //See below at "@media screen and (max-width : 700px)" :
+    .about-stats {
+        .progress-bars {
+        //Previously, "skills" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+        grid-template-columns: 1fr;
+        }
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+    //PORTFOLIO/PROJECTS PAGE :
+    .portfolios {
+        //Previously, projects page was having three columns in a "grid", but here now, in phone format, we want only one column :
+        grid-template-columns: 1fr;
+        
+        padding-bottom : 6rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //BLOGS PAGE :
+    .blogs {
+        //Previously, blogs page was having three columns in a "grid", but here now, in phone format, we want only one column :
+        grid-template-columns: 1fr;
+
+        padding-bottom: 6rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //CONTACT PAGE :
+
+    .sec5 {
+        padding: 0;
+        width: 100vw;
+    }
+    
+    .contact-content-con {
+
+        padding-bottom: 6rem;
+    //Now, here we want contact section in vertical for phone view
+    //Contact section was having 2 rids, one in my detail, another one is filling of form
+    //Abhi ek ke neeche ek aa jaaenge
+        flex-direction: column;
+
+        .right-contact {
+            margin-left: 0;
+            margin-top: 2.5rem;
+        }
+    }
+
+
+    //Form me "Your Name" aur "Your Mail" ko ek ke neeche ek kar do
+    .contact-content-con .right-contact .input-control-2 {
+        flex-direction: column;
+    }
+
+    .contact-content-con .right-contact .input-control-2 :last-child {
+        //Here, last child is "Your Mail" entry, which was second and last child when it was horizontally arrange
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+
+    //Mine :
+    .contact-content-con .left-contact {
+        h4 {
+            font-size: 1.6rem;
+        }
+        
+    }
+
+        .contact-item{
+        flex-direction: column;
+        margin: 1rem 0;
+        p{
+            font-size: 15px;
+            color: var(--color-grey-2);
+        }
+        span{
+            font-size: 15px;
+        }
+        .icon{
+            grid-template-columns: 25px 1fr;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Change/Decrease the size of titles of all the pages :
+    .main-title {
+        h2 {
+            font-size: 1.5rem !important;
+            span {
+                font-size: 2rem !important;
+            }
+            .bg-text {
+                font-size: 2.5rem !important;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+        //Bring buttons at the bottom of the screen :
+    .controlls {
+        top: auto;
+        bottom: 0;           //Because, here we want, buttons at the bottom
+        flex-direction: row; //Horizontally
+        justify-content: center;
+        left: 50%;           //Because, we want it in center (at the bottom only)
+        transform: translateX(-50%);
+        width: 90%;
+        .control {
+            margin: .6rem .3rem;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    //Get rid of padding :
+    //So content of all the section/pages will get fit to the screen (padding hi sahi hoga yaha bas)
+    .section {
+        padding: 2rem 2.5rem !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//CONTACT PAGE :
+@media screen and (max-width : 1432px) {
+
+    //HOME PAGE :
+
+    header {
+        padding: 0 !important;
+    }
+
+
+
+
+
+    .container {
+        padding: 0 !important;
+    }
+
+    .section {
+        padding: 7rem 11rem;
+    }
+
+    .contact-content-con {
+
+        padding-bottom: 6rem;
+    //Now, here we want contact section in vertical for phone view
+    //Contact section was having 2 rids, one in my detail, another one is filling of form
+    //Abhi ek ke neeche ek aa jaaenge
+        flex-direction: column;
+
+        .right-contact {
+            margin-left: 0;
+            margin-top: 2.5rem;
+        }
+    }
+
+
+    //Form me "Your Name" aur "Your Mail" ko ek ke neeche ek kar do
+    .contact-content-con .right-contact .input-control-2 {
+        flex-direction: column;
+    }
+
+    .contact-content-con .right-contact .input-control-2 :last-child {
+        //Here, last child is "Your Mail" entry, which was second and last child when it was horizontally arrange
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+
+    //Mine :
+    .contact-content-con .left-contact {
+        h4 {
+            font-size: 1.6rem;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 1070px)  {
+    .about-container {
+        grid-template-columns: 1fr;
+        .right-about {
+            padding-top: 2.5rem;
+        }
+    }
+
+    .portfolios {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-title {
+        h2 {
+            font-size: 4rem;
+            span {
+                font-size: 4.5rem;
+            }
+            .bg-text {
+                font-size: 5rem;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 970px) {
+    .section {
+        padding: 7rem 6rem;
+    }
+
+
+    //HOME PAGE :
+
+    header {
+        padding: 0;
+        padding-top: 1rem !important;
+    }
+
+    header .right-header {
+        padding: 0 !important;
+    }
+
+    //Decrease the size of Light and Dark theme button :
+    .theme-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-content {
+
+        //Previously, home page was having two columns in a "grid", but here now, in phone format, we want only one column :
+        grid-template-columns: 1fr;
+
+        padding-bottom: 6rem;
+    }
+
+    //From left header, remove that triangular design background :
+    .left-header {
+        .h-shape {
+            display: none;
+        }
+    }
+
+    //Place right header at the top of the photo :
+    .right-header {
+        grid-row: 1;
+        //So, now whatever is there in right header, that will be at "1"st row and now my photo is at 2nd row, as header is in "grid" format
+        
+        width: 90%; //If it will be 100%, then there might be overlapping of button with content of right header
+
+        margin: 0 auto; //It will keep content of right header at the center, by "auto" adjusting left and right margins
+
+        .name {
+            // font-size: 2.5rem !important;
+            font-size: 1.5rem !important;  //mine
+        }
+    }
+
+
+    //Adjust image properly at the center :
+    .header-content .left-header .image {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    //Bring buttons at the bottom of the screen :
+    .controlls {
+        top: auto;
+        bottom: 0;           //Because, here we want, buttons at the bottom
+        flex-direction: row; //Horizontally
+        justify-content: center;
+        left: 50%;           //Because, we want it in center (at the bottom only)
+        transform: translateX(-50%);
+        width: 90%;
+        .control {
+            margin: .6rem .3rem;
+        }
+    }
+
+
+
+
+
+    .portfolios {
+        // padding: ;
+        grid-template-columns: 1fr;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 700px) {
+
+    .section {
+        padding: 7rem 3rem;
+    }
+
+    .about-stats {
+        .progress-bars {
+        //Previously, "skills" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+        grid-template-columns: 1fr;
+        }
+    }
+
+    .timeline {
+        //Previously, "timeline" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+        grid-template-columns: 1fr;
+
+        padding-bottom: 6rem;
+    }
+
+    .main-title{
+        h2{
+            font-size: 3rem;
+            span{
+                font-size: 3rem;
+            }
+            .bg-text{
+                font-size: 4rem;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width : 350px) {
+//     .controlls {
+//         top: auto;
+//         bottom: 0;           //Because, here we want, buttons at the bottom
+//         flex-direction: row; //Horizontally
+//         justify-content: center;
+//         left: 50%;           //Because, we want it in center (at the bottom only)
+//         transform: translateX(-50%);
+//         width: 90%;
+//         .control {
+//             margin: .6rem .1rem;
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .about-container .left-about p{
+//     padding-left: 0;
+// }
+
+// @media screen and (max-width : 600px){
+
+//      //HOME PAGE :
+
+//      header {
+//         padding: 0 !important;
+//      }
+
+//     header .right-header {
+//         padding: 0 !important;
+//     }
+
+//     //Decrease the size of Light and Dark theme button :
+//     .theme-btn {
+//         width: 50px;
+//         height: 50px;
+//     }
+
+//     .header-content {
+
+//         //Previously, home page was having two columns in a "grid", but here now, in phone format, we want only one column :
+//         grid-template-columns: repeat(1, 1fr);
+
+//         padding-bottom: 6rem;
+//     }
+
+//     //From left header, remove that triangular design background :
+//     .left-header {
+//         .h-shape {
+//             display: none;
+//         }
+//     }
+
+//     //Place right header at the top of the photo :
+//     .right-header {
+//         grid-row: 1;
+//         //So, now whatever is there in right header, that will be at "1"st row and now my photo is at 2nd row, as header is in "grid" format
+        
+
+//         padding-right: 0rem !important;
+
+//         width: 90%; //If it will be 100%, then there might be overlapping of button with content of right header
+
+//         margin: 0 auto; //It will keep content of right header at the center, by "auto" adjusting left and right margins
+
+//         .name {
+//             // font-size: 2.5rem !important;
+//             font-size: 1.5rem !important;  //mine
+
+//             text-align: center;
+//             padding-top: 3rem;
+//         }
+//     }
+
+
+//     //Adjust image properly at the center :
+//     .header-content .left-header .image {
+//         margin: 0 auto;
+//         width: 90%;
+//     }
+
+
+
+
+
+
+
+
+
+
+
+
+//     //Bring buttons at the bottom of the screen :
+//     .controlls {
+//         top: auto;
+//         bottom: 0rem;           //Because, here we want, buttons at the bottom
+//         flex-direction: row; //Horizontally
+//         justify-content: center;
+//         left: 50%;           //Because, we want it in center (at the bottom only)
+//         transform: translateX(-50%);
+//         // width: 90%; //mine
+//         width: 100%;
+//         background-color: var(--color-grey-5);
+//         .control {
+//             margin: 1rem .3rem;
+//         }
+//     }
+
+
+
+
+
+
+
+
+
+
+//     //ABOUT PAGE :
+
+//     .about-container {
+//         //Previously, about page was having three columns in a "grid", but here now, in phone format, we want only one column :
+//         grid-template-columns: repeat(1, 1fr);
+
+//         .right-about {
+//             grid-template-columns: repeat(1, 1fr);
+//             padding-top: 2.5rem;
+//         }
+
+//         .left-about {
+//             padding-right: 0;
+//             p {
+//                 padding-left: 0;
+//             }
+//         }
+//     }
+
+
+//     .container{
+//         padding: 2rem 2.5rem !important;
+//     }
+
+
+
+//     .timeline {
+//         //Previously, "timeline" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+//         grid-template-columns: repeat(1, 1fr);
+
+//         padding-bottom: 6rem;
+//     }
+
+    
+//     .about-stats {
+//         .progress-bars {
+//         //Previously, "skills" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+//         grid-template-columns: repeat(1, 1fr);
+//         }
+//     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     .portfolios {
+//         // padding: ;
+//         grid-template-columns: repeat(1, 1fr);
+
+//         padding-bottom: 6rem;
+//         margin-top: 1rem;
+//     }
+
+
+
+//     .blogs {
+//         grid-template-columns: repeat(1, 1fr);
+//         padding-bottom: 6rem;
+//     }
+
+
+
+
+
+
+
+
+
+    
+
+    
+//     //CONTACT PAGE :
+//     .contact-content-con {
+
+//     //Now, here we want contact section in vertical for phone view
+//     //Contact section was having 2 rids, one in my detail, another one is filling of form
+//     //Abhi ek ke neeche ek aa jaaenge
+//         flex-direction: column;
+
+//         .right-contact {
+//             margin-left: 0 ;
+//             margin-top: 2.5rem;
+//         }
+//     }
+
+
+//     //Form me "Your Name" aur "Your Mail" ko ek ke neeche ek kar do
+//     .contact-content-con .right-contact .input-control-2 {
+//         flex-direction: column;
+//     }
+
+//     .contact-content-con .right-contact .input-control-2 :last-child {
+//         //Here, last child is "Your Mail" entry, which was second and last child when it was horizontally arrange
+//         margin-left: 0;
+//         margin-top: 1.5rem;
+//     }
+
+//     .contact-content-con .right-contact{
+//         margin-bottom: 6rem;
+//     }
+
+//     .contact-item{
+//         flex-direction: column;
+//         margin: 1rem 0;
+//         p{
+//             font-size: 15px;
+//             color: var(--color-grey-2);
+//         }
+//         span{
+//             font-size: 15px;
+//         }
+//         .icon{
+//             grid-template-columns: 25px 1fr;
+//         }
+//     }
+
+
+
+
+
+
+
+
+
+
+//     .main-title{
+//         h2{
+//             font-size: 2rem;
+//             span{
+//                 font-size: 2.3rem;
+//             }
+//             .bg-text{
+//                 font-size: 3rem;
+//             }
+//         }
+//     }
+
+    
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width : 1432px) {
+
+//     .container{
+//         padding: 7rem 11rem;
+//     }
+
+//     .contact-content-con {
+        
+//     //Now, here we want contact section in vertical for phone view
+//     //Contact section was having 2 rids, one in my detail, another one is filling of form
+//     //Abhi ek ke neeche ek aa jaaenge
+//         flex-direction: column;
+
+//         .right-contact {
+//             margin-left: 0;
+//             margin-top: 2.5rem;
+//         }
+//     }
+
+
+//     //Form me "Your Name" aur "Your Mail" ko ek ke neeche ek kar do
+//     .contact-content-con .right-contact .input-control-2 {
+//         flex-direction: column;
+//     }
+
+//     .contact-content-con .right-contact .input-control-2 :last-child {
+//         //Here, last child is "Your Mail" entry, which was second and last child when it was horizontally arrange
+//         margin-left: 0;
+//         margin-top: 1.5rem;
+//     }
+
+//     .contact-content-con .right-contact{
+//         margin-bottom: 6rem;
+//     }
+
+
+//     // //Mine :
+//     // .contact-content-con .left-contact {
+//     //     h4 {
+//     //         font-size: 1.6rem;
+//     //     }
+        
+//     // }
+
+//     .main-title{
+//         h2{
+//             .bg-text{
+//                 font-size: 5.5rem;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width:1250px){
+//     .blogs{
+//         grid-template-columns: repeat(2, 1fr);
+//         margin-top: 6rem;
+//     }
+//     .portfolios{
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+//     .header-content .right-header{
+//         padding-right: 9rem;
+//     }
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width:660px){
+//     .blogs{
+//         grid-template-columns: repeat(1, 1fr);
+//     }
+//     .portfolios{
+//         grid-template-columns: repeat(1, 1fr);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width:1070px){
+//     .about-container{
+//         grid-template-columns: repeat(1, 1fr);
+//         .right-about{
+//             padding-top: 2.5rem;
+//         }
+//     }
+//     .main-title{
+//         h2{
+//             font-size: 4rem;
+//             span{
+//                 font-size: 4rem;
+//             }
+//             .bg-text{
+//                 font-size: 4.5rem;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width:970px){
+//     .container{
+//         padding: 7rem 6rem;
+//     }
+//     .about-container .left-about{
+//         padding-right: 0rem;
+//     }
+//     .header-content{
+//         grid-template-columns: repeat(1, 1fr);
+//         padding-bottom: 6rem;
+//     }
+
+//     .left-header{
+//         .h-shape{
+//             display: none;
+//         }
+//         .image{
+//             width: 90% !important;
+//             margin: 0 auto !important;
+            
+//         }
+//     }
+//     .right-header{
+//         grid-row: 1;
+//         padding-right: 0rem !important;
+//         width: 90%;
+//         margin: 0 auto;
+//         .name{
+//             font-size: 2.5rem !important;
+//             text-align: center;
+//             padding-top: 3rem;
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width:700px){
+//     .container{
+//         padding: 7rem 3rem;
+//     }
+//     .about-stats .progress-bars{
+//         grid-template-columns: repeat(1, 1fr);
+//     }
+//     .about-container .right-about{
+//         grid-template-columns: repeat(1, 1fr);
+//     }
+
+//     .timeline{
+//         grid-template-columns: repeat(1, 1fr);
+//     }
+//     .main-title{
+//         h2{
+//             font-size: 3rem;
+//             span{
+//                 font-size: 3rem;
+//             }
+//             .bg-text{
+//                 font-size: 4rem;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // @media screen and (max-width : 700px) {
+
+// //     .section {
+// //         padding: 7rem 3rem;
+// //     }
+
+// //     .about-stats {
+// //         .progress-bars {
+// //         //Previously, "skills" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+// //         grid-template-columns: 1fr;
+// //         }
+// //     }
+
+// //     .timeline {
+// //         //Previously, "timeline" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+// //         grid-template-columns: 1fr;
+
+// //         padding-bottom: 6rem;
+// //     }
+
+// //     .main-title{
+// //         h2{
+// //             font-size: 3rem;
+// //             span{
+// //                 font-size: 3rem;
+// //             }
+// //             .bg-text{
+// //                 font-size: 4rem;
+// //             }
+// //         }
+// //     }
+    
+
+// //     //ABOUT PAGE :
+
+// //     .about-container {
+// //         //Previously, about page was having three columns in a "grid", but here now, in phone format, we want only one column :
+// //         grid-template-columns: 1fr;
+
+// //         .right-about {
+// //             grid-template-columns: 1fr;
+// //             padding-top: 2.5rem;
+// //         }
+
+// //         .left-about {
+// //             padding-right: 0;
+// //             p {
+// //                 padding-left: 0;
+// //             }
+// //         }
+// //     }
+
+
+// //     // //See below at "@media screen and (max-width : 700px)" :
+// //     // .timeline {
+// //     //     //Previously, "timeline" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+// //     //     grid-template-columns: 1fr;
+
+// //     //     padding-bottom: 6rem;
+// //     // }
+
+    
+// //     // //See below at "@media screen and (max-width : 700px)" :
+// //     // .about-stats {
+// //     //     .progress-bars {
+// //     //     //Previously, "skills" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+// //     //     grid-template-columns: 1fr;
+// //     //     }
+// //     // }
+
+
+    
+
+
+
+
+
+
+
+
+
+// //     //PORTFOLIO/PROJECTS PAGE :
+// //     .portfolios {
+// //         //Previously, projects page was having three columns in a "grid", but here now, in phone format, we want only one column :
+// //         grid-template-columns: 1fr;
+        
+// //         padding-bottom : 6rem;
+// //     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //     //BLOGS PAGE :
+// //     .blogs {
+// //         //Previously, blogs page was having three columns in a "grid", but here now, in phone format, we want only one column :
+// //         grid-template-columns: 1fr;
+
+// //         padding-bottom: 6rem;
+// //     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //     //CONTACT PAGE :
+// //     .contact-content-con {
+
+// //         padding-left: 1rem;
+// //         padding-right: 1rem;
+
+// //         padding-bottom: 6rem;
+// //     //Now, here we want contact section in vertical for phone view
+// //     //Contact section was having 2 rids, one in my detail, another one is filling of form
+// //     //Abhi ek ke neeche ek aa jaaenge
+// //         flex-direction: column;
+
+// //         .right-contact {
+// //             margin-left: 0;
+// //             margin-top: 2.5rem;
+// //         }
+// //     }
+
+
+// //     //Form me "Your Name" aur "Your Mail" ko ek ke neeche ek kar do
+// //     .contact-content-con .right-contact .input-control-2 {
+// //         flex-direction: column;
+// //     }
+
+// //     .contact-content-con .right-contact .input-control-2 :last-child {
+// //         //Here, last child is "Your Mail" entry, which was second and last child when it was horizontally arrange
+// //         margin-left: 0;
+// //         margin-top: 1.5rem;
+// //     }
+
+
+// //     // //Mine :
+// //     // .contact-content-con .left-contact {
+// //     //     h4 {
+// //     //         font-size: 1.6rem;
+// //     //     }
+        
+// //     // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //     //Change/Decrease the size of titles of all the pages :
+// //     .main-title {
+// //         h2 {
+// //             font-size: 2rem;
+// //             span {
+// //                 font-size: 2.5rem;
+// //             }
+// //             .bg-text {
+// //                 font-size: 3.5rem;
+// //             }
+// //         }
+// //     }
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+// //     //Get rid of padding :
+// //     //So content of all the section/pages will get fit to the screen (padding hi sahi hoga yaha bas)
+// //     .section {
+// //         padding: 2rem 2.5rem;
+// //     }
+
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // @media screen and (max-width : 1070px)  {
+// //     .about-container {
+// //         grid-template-columns: 1fr;
+// //         .right-about {
+// //             padding-top: 2.5rem;
+// //         }
+// //     }
+
+// //     .portfolios {
+// //         grid-template-columns: 1fr 1fr;
+// //     }
+
+// //     .blogs {
+// //         grid-template-columns: 1fr 1fr;
+// //     }
+
+// //     .main-title {
+// //         h2 {
+// //             font-size: 4rem;
+// //             span {
+// //                 font-size: 4.5rem;
+// //             }
+// //             .bg-text {
+// //                 font-size: 5rem;
+// //             }
+// //         }
+// //     }
+
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // @media screen and (max-width : 970px) {
+// //     .section {
+// //         padding: 7rem 6rem;
+// //     }
+
+
+// //     //HOME PAGE :
+
+// //     header {
+// //         padding: 0;
+// //     }
+
+// //     header .right-header {
+// //         padding: 0 !important;
+// //     }
+
+// //     //Decrease the size of Light and Dark theme button :
+// //     .theme-btn {
+// //         width: 50px;
+// //         height: 50px;
+// //     }
+
+// //     .header-content {
+
+// //         //Previously, home page was having two columns in a "grid", but here now, in phone format, we want only one column :
+// //         grid-template-columns: 1fr;
+
+// //         padding-bottom: 6rem;
+// //     }
+
+// //     //From left header, remove that triangular design background :
+// //     .left-header {
+// //         .h-shape {
+// //             display: none;
+// //         }
+// //     }
+
+// //     //Place right header at the top of the photo :
+// //     .right-header {
+// //         grid-row: 1;
+// //         //So, now whatever is there in right header, that will be at "1"st row and now my photo is at 2nd row, as header is in "grid" format
+        
+// //         width: 90%; //If it will be 100%, then there might be overlapping of button with content of right header
+
+// //         margin: 0 auto; //It will keep content of right header at the center, by "auto" adjusting left and right margins
+
+// //         .name {
+// //             // font-size: 2.5rem !important;
+// //             font-size: 1.5rem !important;  //mine
+// //         }
+// //     }
+
+
+// //     //Adjust image properly at the center :
+// //     .header-content .left-header .image {
+// //         margin: 0 auto;
+// //         width: 90%;
+// //     }
+
+
+
+
+
+
+
+
+
+
+
+
+// //     //Bring buttons at the bottom of the screen :
+// //     .controlls {
+// //         top: auto;
+// //         bottom: 0;           //Because, here we want, buttons at the bottom
+// //         flex-direction: row; //Horizontally
+// //         justify-content: center;
+// //         left: 50%;           //Because, we want it in center (at the bottom only)
+// //         transform: translateX(-50%);
+// //         width: 90%;
+// //         .control {
+// //             margin: .6rem .3rem;
+// //         }
+// //     }
+
+
+
+
+
+// //     .portfolios {
+// //         // padding: ;
+// //         grid-template-columns: 1fr;
+// //     }
+
+// //     .blogs {
+// //         grid-template-columns: 1fr;
+// //     }
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // @media screen and (max-width : 700px) {
+
+// //     .section {
+// //         padding: 7rem 3rem;
+// //     }
+
+// //     .about-stats {
+// //         .progress-bars {
+// //         //Previously, "skills" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+// //         grid-template-columns: 1fr;
+// //         }
+// //     }
+
+// //     .timeline {
+// //         //Previously, "timeline" of about page was having two columns in a "grid", but here now, in phone format, we want only one column :
+// //         grid-template-columns: 1fr;
+
+// //         padding-bottom: 6rem;
+// //     }
+
+// //     .main-title{
+// //         h2{
+// //             font-size: 3rem;
+// //             span{
+// //                 font-size: 3rem;
+// //             }
+// //             .bg-text{
+// //                 font-size: 4rem;
+// //             }
+// //         }
+// //     }
+    
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // @media screen and (max-width : 350px) {
+// //     .controlls {
+// //         top: auto;
+// //         bottom: 0;           //Because, here we want, buttons at the bottom
+// //         flex-direction: row; //Horizontally
+// //         justify-content: center;
+// //         left: 50%;           //Because, we want it in center (at the bottom only)
+// //         transform: translateX(-50%);
+// //         width: 90%;
+// //         .control {
+// //             margin: .6rem .1rem;
+// //         }
+// //     }
+// // }
